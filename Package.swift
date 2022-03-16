@@ -8,6 +8,11 @@ let package = Package(
     platforms: [
         .macOS(.v12)
     ],
+    products: [
+            .executable(
+                name: "pwgenerator",
+                targets: ["pwgenerator"]),
+        ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "0.4.0"),
     ],
